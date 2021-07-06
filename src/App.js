@@ -1,12 +1,13 @@
 import React from "react";
 import Content from './Component/Content'
 import Event from './Component/Event'
-import Nextevent from "./Component/Nextevent";
+import Page from "./Component/Page";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  
 } from "react-router-dom";
 
 
@@ -24,8 +25,8 @@ function App() {
           <Route exact path="/Content">
             <Content/>
           </Route>  
-          <Route exact path="/Nextevent">
-            <Nextevent/>
+          <Route exact path="/Page">
+            <Page/>
           </Route>  
               
        </Switch>

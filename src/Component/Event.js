@@ -38,7 +38,6 @@ useEffect (()=>{
 
 
 
-
     return (
     <div>
       <Home/>
@@ -57,17 +56,18 @@ useEffect (()=>{
             {
               eventsState.map(data =>
                 <div class="col-4" align="center">
-                  <img src={place} alt="place" height="100%" width="50%"/>
+                  <img src={place} alt="place" width="50%"/>
                   <div>
                     <h4><b>{data.eventDescriptions[0].title}</b></h4>
-                    <h6><b>{data.reg_closes_at}</b></h6>
+                     <h6><b>{data.reg_closes_at}</b></h6>
                     
-                  <h6 style={{color:"blue"}}><Link to="/Nextevent">See a Event details </Link></h6>
-                  </div>
-                </div>
+                     </div>
+                  <Link to ={{ pathname: "/page",state: {eventId : data.event_id}}}>See a Event details</Link>
+                  
+                </div>  
               )
             }
-           
+ 
       </div> 
     {/* <div>
       {eventsState , "data--"}
@@ -85,3 +85,8 @@ useEffect (()=>{
 }
 
 export default Event
+
+
+
+
+
