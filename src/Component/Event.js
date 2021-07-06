@@ -33,7 +33,7 @@ useEffect (()=>{
       setEventsState(res.data.parameters);
       
   })
-})
+},[])
 
 
 
@@ -62,7 +62,7 @@ useEffect (()=>{
                      <h6><b>{data.reg_closes_at}</b></h6>
                     
                      </div>
-                  <Link to ={{ pathname: "/page",state: {eventId : data.event_id}}}>See a Event details</Link>
+                  <Link to ={{ pathname: `/Page/${data.event_id}`}}>See a Event details</Link>
                   
                 </div>  
               )

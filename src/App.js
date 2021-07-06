@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/Content">
             <Content/>
           </Route>  
-          <Route exact path="/Page">
+          <Route exact path="/Page/:id">
             <Page/>
           </Route>  
               
