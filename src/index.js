@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//React.Component.prototype.$md5 = md5
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
